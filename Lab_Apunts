@@ -1,7 +1,5 @@
 
 
-Mirar com veure el PATH
-
 
 ~/.bashrc, ~/bash_profile, /etc/bashrch, /etc/profile
 son ficheros de texto, son shell scripts, ficheros que el SO ejecuta de forma automatica cuando se da cierta condición
@@ -20,12 +18,9 @@ Cada usuario tiene su propia copia de .bashrc y .bash_profile (se encuentran en 
 ~/.bash_profile --> se ejecuta el .bash_profile de mo cuando mo inicia su sesion
 ~/.bashrc --> se ejecuta el .bashrc de mo cuando mo ejecuta el programa bash
 
-
-
 cuando abrimos una non-login shell (open a terminal using an icon) los archivos que se leen son: ~/.bashrc. Este file esta referido en ~/.bash_profile
 
 ~ --> ruta al directorio personal = /home/mo = $HOME
-
 
 POSIX: Portable Operating System Interface is a family of standards for maintaining compatibility between OS. POSIX defines the application programming interface (API), along with command line shells and utility interfaces 
 
@@ -101,14 +96,4 @@ chroot --> run command or interactive shell with special root directory
 
 
 UUID: identificador unico uniersal es un numero de 16 B (128bits) 
-
-
-
-
-
-
-
-
-rt of files 
-
 
