@@ -1,0 +1,114 @@
+
+
+Mirar com veure el PATH
+
+
+~/.bashrc, ~/bash_profile, /etc/bashrch, /etc/profile
+son ficheros de texto, son shell scripts, ficheros que el SO ejecuta de forma automatica cuando se da cierta condición
+
+Solo existe una sola copia de /etc/profile y /etc/bashrc
+Cada usuario tiene su propia copia de .bashrc y .bash_profile (se encuentran en ~ el directorio personal de cada usuario) 
+
+. hace que los archivos sean ocultos --> ls -a ~
+
+/etc/profile y /etc/bashrc afectan a todos los usuarios --> gestionados por el admin del sistema (root) 
+
+
+/etc/profile --> se ejecuta cuando cualquier usuario inicia sesion
+/etc/bashrc  --> se ejecuta cada vez que cualquier usuario ejecuta el programa bash 
+
+~/.bash_profile --> se ejecuta el .bash_profile de mo cuando mo inicia su sesion
+~/.bashrc --> se ejecuta el .bashrc de mo cuando mo ejecuta el programa bash
+
+
+
+cuando abrimos una non-login shell (open a terminal using an icon) los archivos que se leen son: ~/.bashrc. Este file esta referido en ~/.bash_profile
+
+~ --> ruta al directorio personal = /home/mo = $HOME
+
+
+POSIX: Portable Operating System Interface is a family of standards for maintaining compatibility between OS. POSIX defines the application programming interface (API), along with command line shells and utility interfaces 
+
+source = . 
+
+http://tldp.org/LDP/Bash-Beginners-Guide/Bash-Beginners-Guide.pdf
+bash:
+- $ - used to get content of variable
+- COLOUR = XXX - set a local shell variable
+- $COLOUR - display content of variable
+- $1, $2, $3 : positional parameters are the words following the name of the shell script  -- \$1 -> escriurá $1
+- $# holds the total number of parameters 
+- `command`
+- $[EXPRESSION] --> echo $[365*24]
+- ? --> exit status of the previously executed command 
+- ^mo : lines starting with mo
+- :$ : lines ending with :
+- \<PATH : lines starting with the string PATH
+- \> : matches the end of a word
+
+
+debugging bash:
+	-x option --> script in debug mode 
+	bash -x script1.sh
+	inside the script for debugging zones -> set -x #start debugging
+						 set +x #stop debugging 
+	#!/bin/bash -xv 
+
+
+
+commands:
+
+w --> show who is logged on and what are they doing
+cut --> remove sections from each line of files 
+	-d use delimitador instead of TAB 
+	cut -d " " 
+	-f select only these fields 
+	cut -d " " -f 1 --> divideix en parts segons " "
+	cut -d":" -f2 - --> divideix en dos parts, f1 es la part abans dels : i f2 es la part de despres
+
+grep --> print lines that match patterns
+	-v invert match: invert the sense of matching, to select non-matching lines
+
+uname --> print system information
+	-s kernel name
+	-m print the machine hardware name
+
+uptime --> tell how long the system has been running
+
+which --> busca una orden 
+	-a muestra todos los nombres de ruta que coincidan con cada argumento
+
+awk --> pattern scanning and processing language 
+	awk '{ print $5 }' -> fa un print del pattern numero 5 // columna
+file --> determine file type
+
+tail --> output the last pa
+
+lsusb --> list USB devices
+
+lspci --> list ll PCI devices 
+
+dmesg --> print or control the kernel ring buffer 
+
+bind --> enlaza un nombre a un conector (socket) 
+
+mound -o bind --> bind mount operation: remount part of the file hierarchy somewhere else. --> crear enllaç MIRAR DOCUMENTACIO PER ENTENDRE MILLOR 
+
+sed --> stream editor for filtering and transforming text
+
+chroot --> run command or interactive shell with special root directory 
+	change the root directory of our system and temporaly use the sw installed
+
+
+UUID: identificador unico uniersal es un numero de 16 B (128bits) 
+
+
+
+
+
+
+
+
+rt of files 
+
+
